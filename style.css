@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;         /* This reset should be done in every project. */
+}
+
+body{
+   height: 100vh;  /* Set the height to cover the full size of the browser. */
+   display: flex;  /* Use flexbox layout. */
+   justify-content: center; /* Horizontally center the content. */
+   align-items: center;    /* Vertically center the content. */
+   margin: 0; /* Set the default margin to 0. */
+}
+
+.sliderContainer{
+   width: 700px;
+   height: 500px;
+   overflow: hidden;
+   border-radius: 20px; /* To round the corners. */
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; /* Adding shadow for depth effect. */
+   position: relative;
+}
+
+.icon{
+   position: absolute;
+   color: white;
+   top: 50%; /* Doesn't fully center, so the next line adjusts it. */
+   transform: translateY(-50%);
+   cursor: pointer;
+   font-size: 25px;
+}
+
+.prev{
+   left: 10px;
+}
+.next{
+   right: 10px;        /* Positioned 10 pixels from the right. */
+}
+.icon:hover{            /* 'hover' means when you move the cursor over it. */
+   color: wheat;
+}
+
+.imageContainer{
+   display: flex;     /* Fit the content inside using flexbox. */
+}
